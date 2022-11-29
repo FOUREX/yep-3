@@ -61,7 +61,7 @@ void yep_2() {
 
 
 void yep_3() {
-	int a, b, sum;
+	int a, b, sum = 0;
 
 	printf("The sum of the squares of all integers from A to B inclusive\n\n\n");
 	printf("Enter numbers:\n");
