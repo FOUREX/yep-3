@@ -5,13 +5,13 @@
 
 
 void pause() {
-    printf("\n");
-    system("pause");
+	printf("\n");
+	system("pause");
 }
 
 
 void clear() {
-    system("cls");
+	system("cls");
 }
 
 
@@ -27,26 +27,26 @@ int fucktoriel(int num) {
 
 
 void yep_1() {
-    int x;
-    float y, s, m, k;
+	int x;
+	float y, s, m, k;
 
-    s = m = k = 0;
+	s = m = k = 0;
 
-    printf("Calculate the equation\n\n\n");
-    printf("Results: \n\n");
+	printf("Calculate the equation\n\n\n");
+	printf("Results: \n\n");
 
-    for (x = 1; x < 50; x += 2) {
-        float _x = (float)x;
-        y = powf(_x, 3) + s * powf(_x, 5) - m * k + sqrtf(_x + m - k);
+	for (x = 1; x < 50; x += 2) {
+		float _x = (float)x;
+		y = powf(_x, 3) + s * powf(_x, 5) - m * k + sqrtf(_x + m - k);
 
-        printf("y(%d) = %.3f\n", x, y);
+		printf("y(%d) = %.3f\n", x, y);
 		Sleep(50);
-    }
+	}
 }
 
 
 void yep_2() {
-    float cost;
+	float cost;
 
 	printf("Calculate the price of cookies\n\n\n");
 	printf("Enter cost of 1kg cookies: ");
@@ -61,7 +61,7 @@ void yep_2() {
 
 
 void yep_3() {
-    int a, b, sum;
+	int a, b, sum;
 
 	printf("The sum of the squares of all integers from A to B inclusive\n\n\n");
 	printf("Enter numbers:\n");
@@ -80,7 +80,7 @@ void yep_3() {
 
 
 void yep_4() {
-    int n, sum = 0;
+	int n, sum = 0;
 
 	printf("Sum of numbers factorials\n\n\n");
 	printf("Enter numbers:\n");
@@ -97,43 +97,43 @@ void yep_4() {
 
 
 int main() {
-    int input;
+	int input;
 
-    while (1) {
-        clear();
+	while (1) {
+		clear();
 
-        printf("FUNCTIONS:\n\n");
+		printf("FUNCTIONS:\n\n");
 
-        printf("1. Calculate the equation\n");
-        printf("2. Calculate the price of cookies\n");
-        printf("3. The sum of the squares of all integers from A to B inclusive\n");
-        printf("4. Sum of numbers factorials\n");
-        printf("5. Exit\n");
+		printf("1. Calculate the equation\n");
+		printf("2. Calculate the price of cookies\n");
+		printf("3. The sum of the squares of all integers from A to B inclusive\n");
+		printf("4. Sum of numbers factorials\n");
+		printf("5. Exit\n");
 
-        printf("\nSelect function: ");
-        scanf("%d", &input);
+		printf("\nSelect function: ");
+		scanf("%d", &input);
 
-        clear();
+		clear();
 
-        switch (input) {
-            case 1:
-                yep_1();
-                break;
-            case 2:
-                yep_2();
-                break;
-            case 3:
-                yep_3();
-                break;
-            case 4:
-                yep_4();
-                break;
-            case 5:
-                clear();
-                exit(0);
-            default:
-                printf("Bruh... %d, rly?", input);
-        }
+		switch (input) {
+			case 1:
+				yep_1();
+				break;
+			case 2:
+				yep_2();
+				break;
+			case 3:
+				yep_3();
+				break;
+			case 4:
+				yep_4();
+				break;
+			case 5:
+				clear();
+				exit(0);
+			default:
+				printf("Bruh... %d, rly?", input);
+		}
 
 		pause();
 	}
